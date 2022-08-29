@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="nav.css" />
+    <title>Cryto Bazaar-About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bazaar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <body>
+    <h1 style="text-align: center">Crypto currency</h1>
+    <div
+      style="margin-top: 60px; margin-bottom: 110px"
+      id="tv-medium-widget-2532c"
+    ></div>
+    <script
+      type="text/javascript"
+      src="https://s3.tradingview.com/tv.js"
+    ></script>
+    <script type="text/javascript">
+      new TradingView.MediumWidget({
+        container_id: "tv-medium-widget-2532c",
+        symbols: [
+          ["Bitcoin", "BITSTAMP:BTCUSD|1y"],
+          ["Ethereum", "BITSTAMP:ETHUSD|1y"],
+          ["Solana", "BITSTAMP:SOLUSD|1y"],
+          ["Dogecoin", "BITSTAMP:DOGUSD|1y"],
+          ["Ripple", "BITSTAMP:RIPUSD|1y"],
+          ["Litecoin", "BITSTAMP:LTCUSD|1y"],
+        ],
+        greyText: "Quotes by",
+        gridLineColor: "#e9e9ea",
+        fontColor: "#83888D",
+        underLineColor: "#dbeffb",
+        trendLineColor: "#4bafe9",
+        width: "1000px",
+        height: "400px",
+        locale: "en",
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="codepen.js"></script>
+    <script>
+      function myFunction() {
+        alert("You need to sign up for crypto trading!");
+      }
+    </script>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="sitelogo.svg" alt="Logo Image" /></a>
+      </div>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li onclick="myFunction()"><a href="bazaar.html">Bazaar</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+        <li><a class="login-button" href="login.html">Login</a></li>
+        <li><a class="join-button" href="register.html">Sign Up</a></li>
+      </ul>
+    </nav>
+    <div class="boton">
+      <button class="custom-btn btn-15" onclick="myFunction()">Buy</button>
+      <button class="custom-btn btn-16" onclick="myFunction()">Sell</button>
+    </div>
+    <footer id="footer">
+      <div class="footer">
+        <div class="row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          Crypto Bazaar Copyright © 2022 Crypto - All rights reserved
+          &raquo;&raquo;&raquo; Designed By: Srinivas Sarkar
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
